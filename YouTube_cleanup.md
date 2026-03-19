@@ -6,6 +6,11 @@ div.style-scope.ytd-statement-banner-renderer {
   display: none;
 }
 
+/* The shorts section on the home page which can be dismissed for 30 days but reappears again after that */
+ytd-rich-section-renderer > div[id="content"]:has(div[id="dismissible"]) {
+  display: none;
+}
+
 /* Randomly-generated "Mix" playlists */
 ytd-rich-item-renderer:has(yt-thumbnail-overlay-badge-view-model) {
   display: none;

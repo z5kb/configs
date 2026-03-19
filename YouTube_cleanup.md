@@ -1,4 +1,5 @@
-CSS selectors which hide most (possibly all) of the many annoying elements on YouTube. Can be pasted in a browser extension like Stylebot.
+CSS selectors which hide most (possibly all) of the many annoying elements on YouTube. Can be pasted in a browser extension like [Stylebot](https://stylebot.dev/).
+Can be combined with [Brave](https://brave.com/) or [UBlockOrigin](https://ublockorigin.com/) for blocking ads, [SponsorBlock](https://sponsor.ajay.app/) for blocking in-video ads, and [Return YouTube Dislike](https://www.returnyoutubedislike.com/).
 
 ```css
 /* The "1 month trial for YouTube Premium" ad which appears on the home page as a page-wide banner */

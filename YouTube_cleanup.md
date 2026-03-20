@@ -12,7 +12,7 @@ ytd-rich-section-renderer > div[id="content"]:has(div[id="dismissible"]) {
   display: none;
 }
 
-/* Randomly-generated "Mix" playlists */
+/* Playlists */
 ytd-rich-item-renderer:has(yt-thumbnail-overlay-badge-view-model) {
   display: none;
 }
@@ -47,8 +47,13 @@ grid-shelf-view-model {
   display: none;
 }
 
-/* "Previously watched" section which interrupts the search results */
-ytd-shelf-renderer {
+/* Suggestion sections which interrupt the search results ("Previously watched from X", "Latest from X", etc.) and suggestion sections on the channels' home pages ("Videos", "X Plays", "For You", etc.) */
+ytd-shelf-renderer:has(div[id="dismissible"]) {
+  display: none;
+}
+
+/* "People also search for" suggestion which interrupts the search results */
+ytd-horizontal-card-list-renderer:has(div[id="dismissible"]) {
   display: none;
 }
 
@@ -57,13 +62,18 @@ div[id="secondary"] {
   display: none;
 }
 
-/* Links + similar videos in the video description */
+/* Media links + similar videos in the video description */
 ytd-video-description-infocards-section-renderer {
   display: none;
 }
 
 /* "Transcript video" section in the video description */
 ytd-video-description-transcript-section-renderer {
+  display: none;
+}
+
+/* Suggested "watch next" videos which appear on the screen when the current video finishes */
+div.ytp-fullscreen-grid {
   display: none;
 }
 ```
